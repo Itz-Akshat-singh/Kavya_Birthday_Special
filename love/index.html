@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Gift for You</title>
+  <style>
+    body {
+      background-color: #f8d0e6;
+      color: #ff6b8b;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #ff6b8b;
+      text-shadow: 0 0 20px #ff6b8b;
+    }
+
+    .controls {
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: #ff6b8b;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff6b8b;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff4d73;
+    }
+
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎀 It's a Birthday Gift for You 🎁</h1>
+
+  <audio id="birthdaySong" controlsList="nodownload">
+    <source src="https://raw.githubusercontent.com/Itz-Akshat-singh/akshat-music/main/annu_bday.mp3
+    " type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="controls">
+    <button onclick="playAudio()">▶ Play</button>
+    <button onclick="pauseAudio()">⏸ Pause</button>
+    <button onclick="replayAudio()">🔁 Replay</button>
+  </div>
+
+  <script>
+    const song = document.getElementById("birthdaySong");
+
+    function playAudio() {
+      song.play();
+    }
+
+    function pauseAudio() {
+      song.pause();
+    }
+
+    function replayAudio() {
+      song.currentTime = 0;
+      song.play();
+    }
+  </script>
+
+</body>
+</html>
