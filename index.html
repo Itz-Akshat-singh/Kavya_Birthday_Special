@@ -13,7 +13,7 @@
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
   <!-- Update title and description for a birthday theme -->
-  <title>Happy birthday By Akshat</title>
+  <title>Kavya ka janamdin</title>
   <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico" />
   <meta name="description" content="A special birthday greeting" />
 </head>
@@ -33,12 +33,12 @@
       <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
     </div>
     <p id="ket">
-      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important; ">Open the gift, cutie:3</span>
+      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important; ">Click the gift, cute bandaria ji 😋</span>
     </p>
 
     <div class="kumpulanstiker" style="margin-top: 95px;">
       <!-- Stickers for Content -->
-      <img src="https://media.tenor.com/4Ijycn6xFzUAAAAj/mochi-blue-roses.gif" id="fotostiker" />
+      <img src="mochi-blue-roses.gif" id="fotostiker" />
       <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
       <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" />
       <img src="https://media.tenor.com/snFoLI-S9CQAAAAj/milk-and-mocha.gif" id="fotostiker3" />
@@ -52,11 +52,11 @@
       <blockquote id="bq" data-text="💞">
         <!-- Update the messages for a birthday greeting -->
         <p id="kalimat">
-          Happy Birthday, gorgeous! Today is all about celebrating you.
+          Happy Birthday, Miss Kavya! 🎉🎂, Apke janamdin ki khub sari badhayi  
         </p>
 
         <!-- Message -->
-        <p id="pesan1">Tap here for your birthday surprise! 🎉</p>
+        <p id="pesan1">Emoji ko dabao 😅! 🎉</p>
         <div id="kolombaru">
           <li id="lv1">🎂</li>
           <li id="lv2">🎁</li>
@@ -64,14 +64,14 @@
           <li id="lv4">💖</li>
         </div>
 
-        <p id="pesan2">You shine brighter every year! ✨</p>
-        <p id="pesan3">Do you know what makes today extra special?</p>
-        <p id="pesan4" class="sty2">It’s your birthday!</p>
+        <p id="pesan2">Hamesha haste rehna muskurate rehna ✨</p>
+        <p id="pesan3">Tumhe pata hai ajj ka din special kyu hai👀?</p>
+        <p id="pesan4" class="sty2">Kyuki ajj tumhara birthday hai🎉!</p>
         <p id="pesan5" class="sty2">
-          Today, I wish you a year filled with laughter, love, and unforgettable moments.
+          aaj ke din, mai yahi dua karunga ki tumhari khushiyan kabhi kam na ho aur dukh kabhi tumhe mile na aur agr galti se aa bhi jaye to chala jaye🤞✨
         </p>
         <p id="pesan6" class="sty2">
-          Remember, you deserve every happiness in the world. Celebrate big and enjoy every moment!
+          Yad rakhna, tum hamesha special ho aur rahogi bhi 💖 you are the person jo kisi ke chehre pe muskan la sakta hai kisi insan ko accha insan bana sakti hai isi liye tum special ho. 
         </p>
 
         <!-- Next Button -->
@@ -128,12 +128,12 @@
 
     async function inipesan() {
       var { value: nama } = await swals.fire({
-        title: "What's your beautiful name?",
+        title: "Apna khubsurat sa nam type karo Bandariya ji waise jo daldo mai to bandariya kahunga?",
         input: "text",
       });
       if (nama && nama.length < 11) {
         window.nama = nama;
-        vketikhalo = "Happy Birthday, " + nama + "!";
+        vketikhalo = "Happy Birthday,Miss " + nama + "! 🎉🎂";
         mulainama();
       } else {
         await Swal.fire({
